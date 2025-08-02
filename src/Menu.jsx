@@ -9,10 +9,7 @@ function Menu() {
         <h1>Forkog Tales</h1>
       </div>
       <div>
-        <form action="send">
-            
-        </form>
-        <button id="submit"></button>
+        
       </div>
     </>
   )

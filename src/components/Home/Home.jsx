@@ -3,7 +3,6 @@ import './Home.scss'
 
 export const Home = () => {
   return (
-    <>
     <main className='mainHome'>
         <h1>Página de inicio</h1>
         <div className='homeDiv1'>
@@ -13,6 +12,6 @@ export const Home = () => {
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nam minima ad exercitationem repudiandae vitae in totam. Architecto reiciendis, sapiente illo dolore ipsa cum, vel, totam voluptate nesciunt illum doloribus!</p>
         </div>
     </main>
-    </>
+
   )
 }

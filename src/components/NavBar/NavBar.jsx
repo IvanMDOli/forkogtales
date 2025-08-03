@@ -1,35 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import logo from '../../assets/logo/logo.png'
 import './navbar.scss'
 
 
 export const NavBar = () => {
 
-    //const { user } = useContext(UserContext) 
-
     return (
         <header className='header'>
             <div className='logo'>
-                <Link to={'/'}>Hola</Link>
+                <Link to={'/home'}><img src={logo} alt="Logo" /></Link>
             </div>
-            {/*<nav className='nav-bar'>
+            <nav className='nav-bar'>
                 <ul className='botones-nav'>
-                    <Link className='links-nav' to={"/products/electronics"}>Electronics</Link>
-                    <Link className='links-nav' to={"/products/vehicles"}>Vehicles</Link>
-                    <Link className='links-nav' to={"/products/clothes"}>Clothes</Link>
+                    <Link className='links-nav' to={"/noticias"}>Noticias</Link>
+                    <Link className='links-nav' to={"/historia"}>Mundo</Link>
+                    <Link className='links-nav' to={"/mapa"}>Mapa</Link>
                 </ul>
-                <ul className='cart-wish'>
-                    <Link to={'/cart'}><CartWidget /></Link>
-                    <Link to={'/wish-list'}><Icon icon="ph:star-duotone" color="#313131" width="40" height="40" /></Link>
-                </ul>
-                <ul className='botones-principales'>
-                    <Link className='links-principales' to={'/'}>Inicio</Link>
-                    {user.logged 
-                        ? <Link className='links-principales' to={'/profile'}>{`${user.name}`}</Link>
-                        : <Link className='links-principales' to={'/login'}>Login</Link>
-                    }
-                </ul>
-            </nav>*/}
+            </nav>
         </header>
     )
 }

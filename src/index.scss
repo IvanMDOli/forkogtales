@@ -11,14 +11,16 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-image: url('./assets/background/fondo2.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 body {
   margin: 0;
-  place-items: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #0000006e;
+  backdrop-filter: blur(2px);
 }

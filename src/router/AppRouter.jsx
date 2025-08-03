@@ -3,6 +3,10 @@ import { Front } from '../components/Front/Front'
 import { NavBar } from '../components/Navbar/NavBar'
 import { Footer } from '../components/Footer/Footer'
 import { Home } from '../components/Home/Home'
+import { Colores } from '../components/Colores/Colores'
+import { Noticias } from '../components/Noticias/Noticias'
+import { Historia } from '../components/Historia/Historia'
+import { Mapa } from '../components/Mapa/Mapa'
 
 function Layout({ children }) {
   return (
@@ -26,6 +30,10 @@ export const AppRouter = () => {
             <Layout>
               <Routes>
                 <Route path="/home" element={<Home />} />
+                <Route path="/colores" element={<Colores />} />
+                <Route path="/noticias" element={<Noticias />} />
+                <Route path="/historia" element={<Historia />} />
+                <Route path="/mapa" element={<Mapa />} />
               </Routes>
             </Layout>
           }

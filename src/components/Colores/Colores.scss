@@ -1,0 +1,41 @@
+.divPaletas {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10%;
+
+    .paletas {
+        width: 20%;
+        height: 100%;
+        border: 2px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+
+    .paletas:nth-child(1) {
+        background-color: #ae0000;
+    }
+
+    .paletas:nth-child(2) {
+        background-color: #ffac27;
+    }
+
+    .paletas:nth-child(3) {
+        background-color: #f1b828;
+    }
+
+    .paletas:nth-child(4) {
+        background-color: #532f13;
+    }
+
+    .paletas:nth-child(5) {
+        background-color: #1b1b1b;
+    }
+}

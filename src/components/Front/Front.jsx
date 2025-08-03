@@ -12,7 +12,7 @@ export const Front = () => {
           <div className='logo'>
             <Link to={'/home'}><img src={logo} alt="ForkogTales Logo" /></Link>
           </div>
-          <p>Iniciá tu aventura...</p>
+          <p>Iniciá tu aventura... trolazo!!!</p>
         </div>
       </main>
     </>

@@ -1,15 +1,12 @@
 import './App.scss'
-import Front from './components/Front/Front.jsx'
-//import AppRouter from './router/AppRouter.jsx'
+import { AppRouter } from './router/AppRouter'
 
-function App() {
+export const App = () => {
 
 
   return (
-
-      <Front />
+      
+      <AppRouter />
 
   )
 }
-
-export default App

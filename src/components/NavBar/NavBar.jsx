@@ -1,11 +1,11 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import './navbar.scss'
 
 
 export const NavBar = () => {
 
-    const { user } = useContext(UserContext) 
+    //const { user } = useContext(UserContext) 
 
     return (
         <header className='header'>

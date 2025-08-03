@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom'
+import logo from '../../assets/logo/logo.jpg'
 import './Front.scss'
 
-function Front() {
+export const Front = () => {
 
 
   return (
@@ -8,7 +10,7 @@ function Front() {
       <main className='mainFront'>
         <div className='inicio'>
           <div className='logo'>
-            
+            <Link to={'/home'}><img src={logo} alt="ForkogTales Logo" /></Link>
           </div>
           <p>Iniciá tu aventura...</p>
         </div>
@@ -16,5 +18,3 @@ function Front() {
     </>
   )
 }
-
-export default Front

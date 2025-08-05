@@ -2,6 +2,10 @@
     background-color: black;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
     .inicio {
         width: 75%;
@@ -33,8 +37,9 @@
                     
                 }
                 &:hover img {
-                        transform: scale(0.95);
-                        transition: 0.3s;
+                    transition: 0.3s;
+                    transform: scale(0.95);
+                    filter: brightness(1.2) drop-shadow(0 0 10px rgb(255, 239, 147));
                 }
             }
         }    

@@ -6,15 +6,13 @@ export const Front = () => {
 
 
   return (
-    <>
-      <main className='mainFront'>
+      <section className='mainFront'>
         <div className='inicio'>
           <div className='logo'>
             <Link to={'/home'}><img src={logo} alt="ForkogTales Logo" /></Link>
           </div>
           <p>Iniciá tu aventura... trolazo!!!</p>
         </div>
-      </main>
-    </>
+      </section>
   )
 }

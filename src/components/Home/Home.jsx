@@ -1,17 +1,16 @@
 import './Home.scss'
-
+import dec1 from '../../assets/decoratives/decorativo-leon.png'
 
 export const Home = () => {
   return (
     <main className='mainHome'>
-        <h1>Página de inicio</h1>
-        <div className='homeDiv1'>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, quasi blanditiis commodi eum non sapiente voluptates, ratione placeat velit repellat omnis hic cum sequi doloremque. Suscipit sapiente esse obcaecati est!</p>
-        </div>
-        <div className='homeDiv2'>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nam minima ad exercitationem repudiandae vitae in totam. Architecto reiciendis, sapiente illo dolore ipsa cum, vel, totam voluptate nesciunt illum doloribus!</p>
-        </div>
+      <div className='divHome'>
+        <h1 className='titleHome'>Bienvenido</h1>
+        <img className='decorativeHome' src={dec1} alt="Decorative Lion" />
+        <p className='pHome'>"Solo quien se atreve a lanzar el dado, conoce el destino que le aguarda." <br />— Tabernero de Forkog</p>
+        <p className='textHome'>Discover the world of Forkog Tales, where every story is a journey waiting to be explored.</p>
+        <button className='buttonHome'>Get Started</button>
+      </div>
     </main>
-
   )
 }

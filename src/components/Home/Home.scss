@@ -4,28 +4,36 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: #333;
-    text-align: center;
-    width: 100%;
-  }
+  align-items: center;
+  margin: 0 auto;
 
-  .homeDiv1,
-  .homeDiv2 {
+  .divHome {
+    margin: 80px auto;
+    padding: 8%;
+    aspect-ratio: 16 / 9;
+    aspect-ratio: 1 / 1;
+    background-image: url('../../assets/posts/contenedor-post.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
     width: 100%;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    max-width: 700px;
-    padding: 1.5rem;
-    font-size: 1.1rem;
-    color: #444;
-  }
+    min-height: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    .decorativeHome {
+      width: 50%;
+      height: auto;
+    }
 
-  .homeDiv2 {
-    background: #f0f4fa;
+    .titleHome {
+      font-size: 7rem;
+      text-align: center;
+      color: #ae0000;
+      margin: 20px 0;
+      -webkit-text-stroke: 1px #00000041;
+    }
   }
 }

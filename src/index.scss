@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'Ancient';
+  src: url('/fonts/ancient/Ancient-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Seagram';
+  src: url('/fonts/seagram/Seagram-tfb.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -23,4 +38,12 @@ body {
   min-height: 100vh;
   background-color: #0000006e;
   backdrop-filter: blur(2px);
+}
+
+h1 {
+  font-family: 'Ancient', sans-serif;
+}
+
+p {
+  font-family: 'Seagram', sans-serif;
 }

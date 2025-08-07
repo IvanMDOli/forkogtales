@@ -7,8 +7,8 @@ export const Front = () => {
 
   return (
       <section className='mainFront'>
-        <div className='inicio'>
-          <div className='logo'>
+        <div className='divInicio'>
+          <div className='divLogo'>
             <Link to={'/home'}><img src={logo} alt="ForkogTales Logo" /></Link>
           </div>
           <p>Iniciá tu aventura... trolazo!!!</p>

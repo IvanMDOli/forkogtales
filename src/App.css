@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/** {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-width: 400px;
+    min-height: 900px;
+    padding-top: 200px;
+}*/

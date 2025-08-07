@@ -5,7 +5,7 @@ import './navbar.scss'
 
 export const NavBar = () => {
 
-    const perfil = localStorage.getItem("token")
+    //const perfil = localStorage.getItem("token")
 
     return (
         <header className='header'>
@@ -29,7 +29,8 @@ export const NavBar = () => {
                 </ul>
                 <ul className='perfil-menu'>
                     <li>
-                        <Link className='links-nav' to={perfil ? "/perfil" : "*"}><img src={perfil ? perfil.picture : "./foto-perfil-generico.png"} alt="Foto de Perfil" />{perfil ? perfil.name : "Perfil"}</Link>
+                        {/*<Link className='links-nav' to={//perfil ? "/perfil" : "*"}><img src={perfil ? perfil.picture : "./foto-perfil-generico.png"} alt="Foto de Perfil" />{perfil ? perfil.name : "Perfil"}</Link>*/}
+                        <Link className='links-nav' to='*'>Perfil</Link>
                         <ul className='dropdown-nav'>
                             <li>
                                 <Link className='links-nav' to={"/login"}>Login</Link>

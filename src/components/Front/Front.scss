@@ -1,5 +1,7 @@
 .mainFront {
-    background-color: black;
+    background-image: url('/backgrounds/fondo-madera-oscura.png');
+    background-size: cover;
+    background-position: center;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -7,7 +9,25 @@
     align-items: center;
     justify-content: center;
 
-    .inicio {
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        background-image: url('/backgrounds/fondo-madera-oscura.png');
+        background-size: cover;
+        background-position: center;
+        filter: blur(5px);
+        pointer-events: none;
+        box-shadow: inset 0 0 200px rgb(0, 0, 0);
+    }
+
+    > * {
+        position: relative;
+        z-index: 1;
+    }
+
+    .divInicio {
         width: 75%;
         height: 80%;
         display: flex;
@@ -16,7 +36,7 @@
         justify-content: space-evenly;
         flex-wrap: nowrap;
 
-        .logo { 
+        .divLogo { 
             width: 80%;
             height: 75%;
             display: flex;
@@ -34,12 +54,12 @@
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
-                    
                 }
+
                 &:hover img {
                     transition: 0.3s;
                     transform: scale(0.95);
-                    filter: brightness(1.2) drop-shadow(0 0 10px rgb(255, 239, 147));
+                    filter: brightness(1.1) drop-shadow(0 0 8px #ffd95a);
                 }
             }
         }    

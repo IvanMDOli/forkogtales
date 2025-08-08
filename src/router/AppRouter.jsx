@@ -7,7 +7,6 @@ import { Colores } from '../components/Colores/Colores'
 import { Noticias } from '../components/Noticias/Noticias'
 import { Historia } from '../components/Historia/Historia'
 import { Mapa } from '../components/Mapa/Mapa'
-import { TestGrid } from '../components/TestGrid/TestGrid'
 
 function Layout({ children }) {
   return (
@@ -35,7 +34,6 @@ export const AppRouter = () => {
                 <Route path="/noticias" element={<Noticias />} />
                 <Route path="/historia" element={<Historia />} />
                 <Route path="/mapa" element={<Mapa />} />
-                <Route path="/testgrid" element={<TestGrid />} />
               </Routes>
             </Layout>
           }

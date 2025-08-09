@@ -32,8 +32,6 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #0000006e;
-  backdrop-filter: blur(2px);
 }
 
 h1 {

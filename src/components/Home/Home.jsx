@@ -3,9 +3,9 @@ import { Post } from './Post/Post'
 
 export const Home = () => {
   return (
-    <main className='static flex flex-col items-center justify-center h-full w-full'>
+    <main className='static pt-35 flex flex-col items-center justify-center h-full w-full bg-[url(/backgrounds/fondo-taberna.png)] bg-top bg-fixed bg-cover bg-no-repeat'>
       <Post />
-      <section className='flex flex-col items-center justify-center px-5 py-20 w-full h-full border-t-4 border-b-4 border-amber-400'>
+      <section className='flex flex-col items-center justify-center px-5 py-20 w-full h-full border-t-4 border-b-4 border-amber-400 bg-zinc-900'>
         <div className='*:flex *:flex-col *:items-center *:justify-center *:w-full *:py-10 *:px-10 flex flex-col items-center justify-between h-full w-full'>
           <div>
             <h2 className='text-2xl text-red-800'>Explora nuestras secciones</h2>

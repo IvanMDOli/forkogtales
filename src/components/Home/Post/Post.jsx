@@ -3,7 +3,7 @@ import dec1 from '../../../assets/decoratives/decorativo-leon.png'
 
 export const Post = () => {
   return (
-    <section className='flex flex-col items-center justify-center px-5 pt-50 pb-20 w-full h-full bg-[url(/backgrounds/fondo-taberna.png)] bg-top bg-fixed bg-cover bg-no-repeat'>
+    <section className='flex flex-col items-center justify-center px-5 py-20 w-full h-full'>
         <div className='*:flex *:flex-col *:items-center *:justify-center *:w-full flex flex-col items-center justify-between w-7/10 h-full p-[5%] aspect-1195/1666 object-cover bg-[url(../src/assets/posts/contenedor-post.png)] bg-top bg-contain bg-no-repeat'>
           <div>
             <h1 className='text-red-800 select-none [-webkit-text-stroke:1px_#00000080]'>Bienvenido</h1>

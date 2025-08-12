@@ -14,7 +14,7 @@ export const Home = () => {
             <p className='text-center'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod impedit ipsam optio rem beatae enim in, nesciunt, obcaecati omnis aliquam facere! Inventore natus odio architecto, odit delectus harum ullam voluptatibus.</p>
           </div>
           <div>
-            <img className='w-1/4 select-none drop-shadow-xl/100' src={dec2} alt="Decorativo Calavera" />
+            <img className='w-1/5 select-none drop-shadow-xl/100' src={dec2} alt="Decorativo Calavera" />
           </div>
         </div>
       </section>

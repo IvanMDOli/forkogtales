@@ -5,7 +5,7 @@ import { Footer } from '../components/Footer/Footer'
 import { Home } from '../components/Home/Home'
 import { Colores } from '../components/Colores/Colores'
 import { Noticias } from '../components/Noticias/Noticias'
-import { Historia } from '../components/Historia/Historia'
+import { Mundo } from '../components/Mundo/Mundo'
 import { Mapa } from '../components/Mapa/Mapa'
 
 function Layout({ children }) {
@@ -32,7 +32,7 @@ export const AppRouter = () => {
                 <Route path="/home" element={<Home />} />
                 <Route path="/colores" element={<Colores />} />
                 <Route path="/noticias" element={<Noticias />} />
-                <Route path="/historia" element={<Historia />} />
+                <Route path="/mundo" element={<Mundo />} />
                 <Route path="/mapa" element={<Mapa />} />
               </Routes>
             </Layout>

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import logo from '../../assets/logo/logo.png'
+import logo from '/logo/logo.png'
+import logoChico from '/icon/favicon-forkog.png'
 
 export const NavBar = () => {
     const [isScrolled, setIsScrolled] = useState(false)
@@ -19,7 +20,7 @@ export const NavBar = () => {
     const navLinks = [
         { path: "/home", label: "Inicio" },
         { path: "/noticias", label: "Noticias" },
-        { path: "/historia", label: "Mundo" },
+        { path: "/mundo", label: "Mundo" },
         { path: "/mapa", label: "Mapa" }
     ]
 
@@ -29,16 +30,15 @@ export const NavBar = () => {
     ]
 
     const linkClass = 'text-[16px] select-none duration-300 ease-out hover:text-amber-400'
+    const baseHeaderClass = "fixed inset-x-0 top-0 flex justify-between items-end z-[100] transition-all duration-300 px-5 py-1 bg-zinc-900 mx-auto"
+    const scrolledClass = "rounded-xl w-[98%] shadow-lg border-b-2 border-b-amber-500 mt-[1%] h-[8%] opacity-95"
+    const topClass = "w-full h-[16%] border-b-4 border-b-amber-500 mt-0"
 
     return (
-        <header
-            className={`fixed inset-x-0 top-0 flex justify-between items-end z-[100] transition-all duration-300 py-[10px] px-[50px] bg-zinc-900 ${
-                isScrolled ? 'rounded-xl w-[98%] mx-auto shadow-lg border-b-2 border-b-amber-500' : 'mx-auto w-full border-b-4 border-b-amber-500'
-            }`}
-        >
-            <div className={`content-[""] -z-1 inset-[0px] absolute bg-[url(/backgrounds/fondo-nav.png)] bg-cover bg-center pointer-events-none opacity-50 transition-all duration-300 ${ isScrolled ? 'rounded-xl' : 'rounded-none'}`}></div>
-            <div className='py-4'>
-                <Link to={'/home'}><img className='w-[200px]' src={logo} alt="Logo" /></Link>
+        <header className={`${baseHeaderClass} ${isScrolled ? scrolledClass : topClass}`}>
+            <div className={`-z-1 inset-[0px] absolute bg-[url(/backgrounds/fondo-nav.png)] bg-cover bg-center pointer-events-none opacity-50 transition-all duration-300 ${ isScrolled ? 'rounded-xl' : 'rounded-none'}`}></div>
+            <div className='flex item-center justify-center *:flex *:item-center *:justify-center h-full w-1/4 transition-all duration-300'>
+                <Link to={'/home'}><img className={`transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'}`} src={isScrolled ? logoChico : logo} alt="Logo"/> </Link>
             </div>
             <nav className='w-[65%] flex items-end justify-between'>
                 <ul className='w-[60%] flex items-center justify-between m-[10px]'>
@@ -50,7 +50,7 @@ export const NavBar = () => {
                         </li>
                     ))}
                 </ul>
-                <ul className='relative m-[10px] hover:[&_ul]:opacity-100 hover:[&_ul]:-translate-x-[50%] hover:[&_ul]:translate-y-[5px] hover:[&_ul]:pointer-events-auto'>
+                <ul className='relative m-[10px] mr-[50px] hover:[&_ul]:opacity-100 hover:[&_ul]:-translate-x-[50%] hover:[&_ul]:translate-y-[5px] hover:[&_ul]:pointer-events-auto'>
                     <li>
                         <Link className={`${linkClass} pb-[20px]`} to='*'>Perfil</Link>
                         <ul className='absolute flex p-[1em] mt-[5px] flex-col items-center top-[100%] left-[50%] duration-300 ease-out opacity-0 pointer-events-none -translate-x-[50%] -translate-y-[10px] bg-zinc-800 text-white rounded shadow-lg'>

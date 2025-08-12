@@ -4,7 +4,7 @@ import { ListaNoticias } from "./ListaNoticias/ListaNoticias"
 
 export const Noticias = () => {
   return (
-    <main className='flex flex-col items-center justify-center'>
+    <main className='flex flex-col items-center justify-center w-full'>
         <GridNoticias />
         <ListaNoticias />
     </main> 

@@ -1,7 +1,7 @@
 
 export const GridNoticias = () => {
   return (
-    <section className='pt-55 *:flex *:items-center *:justify-center *:bg-blue-600 *:border *:border-gray-400 *:transition *:duration-300 *:ease-in-out *:hover:border-amber-400 *:hover:bg-blue-500self-center pb-20 grid grid-cols-3 gap-4 h-260 w-13/22'>
+    <section className='pt-55 w-6/10 *:flex *:items-center *:justify-center *:bg-blue-600 *:border *:border-gray-400 *:transition *:duration-300 *:ease-in-out *:hover:border-amber-400 *:hover:bg-blue-500self-center pb-20 grid grid-cols-3 gap-4 h-260'>
         <div className='col-span-2 row-span-2'>
             <p className='text-center'>Noticia 1</p>
         </div>

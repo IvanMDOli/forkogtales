@@ -7,6 +7,7 @@ import { Colores } from '../components/Colores/Colores'
 import { Noticias } from '../components/Noticias/Noticias'
 import { Mundo } from '../components/Mundo/Mundo'
 import { Mapa } from '../components/Mapa/Mapa'
+import { ScrollToTop } from '../utils/ScrollToTop/ScrollToTop'
 
 function Layout({ children }) {
   return (
@@ -22,6 +23,7 @@ export const AppRouter = () => {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Front />} />
         <Route

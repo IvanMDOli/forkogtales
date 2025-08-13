@@ -1,20 +1,26 @@
-import React from 'react'
+import { Link } from "react-router-dom";
 
-export const ListaNoticias = () => {
+export const ListaNoticias = ({ noticias }) => {
+  if (!noticias?.length) return null;
+
   return (
-    <section className='w-9/10 h-auto px-4 py-10 flex flex-col items-center justify-evenly bg-blue-900'>
-        <div className='w-full p-5 pb-10'>
-            <h2>Lista de Noticias</h2>
+    <section className="w-full p-4 bg-zinc-700 flex flex-col items-center justify-center">
+      {noticias.map((n) => (
+        <div className="flex w-9/10 items-center justify-center p-2 border-b-1 border-amber-500/60 bg-linear-[to_right,rgba(0,0,0,0)_0%,rgba(0,0,0,0.7)_7%,rgba(0,0,0,0.7)_93%,rgba(0,0,0,0)_100%]">
+          <Link
+          key={n.id}
+          to={n.link}
+          className="flex w-3/5 items-center gap-4 hover:bg-gray-500 p-2 rounded-lg transition-colors"
+          >
+            <img
+              src={n.imagen}
+              alt={n.titulo}
+              className="w-20 h-20 object-cover rounded-md"
+            />
+            <h3 className="text-lg font-medium">{n.titulo}</h3>
+          </Link>
         </div>
-        <div className='w-full'>
-            <ul className='*:h-30 *:border-y-2 *:border-zinc-600 *:p-4'>
-                <li>Noticia 1</li>
-                <li>Noticia 2</li>
-                <li>Noticia 3</li>
-                <li>Noticia 4</li>
-                <li>Noticia 5</li>
-            </ul>
-        </div>
+      ))}
     </section>
-  )
-}
+  );
+};

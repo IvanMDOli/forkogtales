@@ -12,6 +12,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'EnchantedTales';
+  src: url('/fonts/enchanted_tales/EnchantedTales-FreeDemo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -41,8 +47,13 @@ body {
   min-height: 100vh;
 }
 
-h1 {
+.h1Post {
   font-family: 'Ancient', sans-serif;
+  font-size: clamp(2rem, 6vw, 7rem);
+}
+
+.h1Nosotros {
+  font-family: 'EnchantedTales', sans-serif;
   font-size: clamp(2rem, 6vw, 7rem);
 }
 

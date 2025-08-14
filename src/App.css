@@ -1,17 +1,26 @@
 @import "tailwindcss";
 
-/** {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@keyframes stars {
+  from { background-position: 0 0; }
+  to { background-position: -10000px 5000px; }
 }
 
-main{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    min-width: 400px;
-    min-height: 900px;
-    padding-top: 200px;
-}*/
+@keyframes twinkle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+.animate-stars {
+  background: black url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+  animation: stars 200s linear infinite;
+}
+
+.animate-twinkle {
+  background: black url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+.paperwall {
+  background-color: #d4b55f;
+  background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+}

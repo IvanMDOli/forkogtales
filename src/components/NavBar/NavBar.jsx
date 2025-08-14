@@ -19,6 +19,7 @@ export const NavBar = () => {
 
     const navLinks = [
         { path: "/home", label: "Inicio" },
+        { path: "/nosotros", label: "Nosotros" },
         { path: "/noticias", label: "Noticias" },
         { path: "/mundo", label: "Mundo" },
         { path: "/mapa", label: "Mapa" }

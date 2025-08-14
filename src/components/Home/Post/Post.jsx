@@ -6,7 +6,7 @@ export const Post = () => {
     <section className='flex flex-col items-center justify-center px-5 py-20 w-full h-full'>
         <div className='*:flex *:flex-col *:items-center *:justify-center *:w-full flex flex-col items-center justify-between w-7/10 h-full p-[5%] aspect-1195/1666 object-cover bg-[url(../src/assets/posts/contenedor-post.png)] bg-top bg-contain bg-no-repeat'>
           <div>
-            <h1 className='text-red-800 select-none [-webkit-text-stroke:1px_#00000080]'>Bienvenido</h1>
+            <h1 className='text-red-800 select-none [-webkit-text-stroke:1px_#00000080] h1Post'>Bienvenido</h1>
           </div>
           <div>
             <p className='text-center text-zinc-500'>"Solo quien se atreve a lanzar el dado, <br />conoce el destino que le aguarda." <br />Tabernero de Forkog</p>

@@ -1,18 +1,57 @@
+import { useEffect, useRef } from 'react';
 import { HighlightUppercase } from '../../utils/HighlightUppercase/HighlightUppercase';
 
 export const Nosotros = () => {
+    const particlesRef = useRef(null);
 
-    document.querySelectorAll("h1").forEach(h1 => {
-        h1.innerHTML = h1.textContent.replace(/([A-ZÁÉÍÓÚÑ])/g, '<span class="text-yellow-400 text-6xl">$1</span>');
-     });
+    useEffect(() => {
+    const container = particlesRef.current;
+    if (!container) return;
+
+    const particleNum = 100;
+    const particleBaseSize = 8;
+
+    for (let i = 0; i < particleNum; i++) {
+      const circleContainer = document.createElement('div');
+      const circle = document.createElement('div');
+
+      const size = Math.random() * particleBaseSize;
+      circleContainer.className = 'circle-container';
+      circleContainer.style.width = `${size}px`;
+      circleContainer.style.height = `${size}px`;
+
+      // Variables CSS para animación
+      const fromX = Math.random() * 100;
+      const fromY = Math.random() * 100;
+      const toX = Math.random() * 100;
+      const toY = Math.random() * -50;
+      const dur = 28000 + Math.random() * 9000;
+      const delay = Math.random() * 37000;
+
+      circleContainer.style.setProperty('--from-x', `${fromX}vw`);
+      circleContainer.style.setProperty('--from-y', `${fromY}vh`);
+      circleContainer.style.setProperty('--to-x', `${toX}vw`);
+      circleContainer.style.setProperty('--to-y', `${toY}vh`);
+      circleContainer.style.setProperty('--dur', `${dur}ms`);
+      circleContainer.style.setProperty('--delay', `${delay}ms`);
+
+      circle.className = 'circle';
+      circle.style.animationDelay = `${Math.random() * 4000}ms`;
+
+      circleContainer.appendChild(circle);
+      container.appendChild(circleContainer);
+    }
+  }, []);
+
   return (
     <main>
         <section className='static flex-col items-center justify-center h-full w-full bg-zinc-900'>
             <div className='flex flex-col items-center justify-center w-full h-full border-b-4 border-amber-400 bg-zinc-900'>
                 <div className='w-full h-screen relative overflow-hidden bg-black flex items-center justify-center pt-20'>
+                    <div ref={particlesRef} className="z-11 particles-container"></div>
                     <div className="absolute inset-0 animate-stars"></div>
                     <div className="absolute inset-0 animate-twinkle"></div>
-                    <h1 className='text-4xl z-10 text-amber-400 text-shadow-[0_0_5px_#FFFFFF] text-center select-none h1Nosotros'>Nuevos Comienzos</h1>
+                    <h1 className='text-4xl z-10 text-shadow-[0_0_5px_#FFFFFF] text-center select-none h1Nosotros fondo-h1-nosotros'>Nuevos Comienzos</h1>
                 </div>
                 <div className='paperwall w-full relative overflow-hidden flex items-center justify-center py-20 px-80'>
                     <HighlightUppercase 

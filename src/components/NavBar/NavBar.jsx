@@ -39,7 +39,7 @@ export const NavBar = () => {
         <header className={`${baseHeaderClass} ${isScrolled ? scrolledClass : topClass}`}>
             <div className={`-z-1 inset-[0px] absolute bg-[url(/backgrounds/fondo-nav.png)] bg-cover bg-center pointer-events-none opacity-50 transition-all duration-300 ${ isScrolled ? 'rounded-xl' : 'rounded-none'}`}></div>
             <div className='flex item-center justify-center *:flex *:item-center *:justify-center h-full w-1/4 transition-all duration-300'>
-                <Link to={'/home'}><img className={`transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'}`} src={isScrolled ? logoChico : logo} alt="Logo"/> </Link>
+                <Link to={'/home'}><img className={`transition-all duration-700 ${isScrolled ? 'py-2' : 'py-4'}`} src={isScrolled ? logoChico : logo} alt="Logo"/> </Link>
             </div>
             <nav className='w-[65%] flex items-end justify-between'>
                 <ul className='w-[60%] flex items-center justify-between m-[10px]'>

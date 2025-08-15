@@ -10,7 +10,7 @@ export const Noticias = () => {
   const noticiasViejas = noticiasData.slice(5);
 
   return (
-    <main className='flex flex-col items-center justify-center w-full'>
+    <main className='flex flex-col items-center justify-center w-full noticias-background'>
         <GridNoticias noticias={noticiaPrincipal} />
         <ListaNoticias noticias={noticiasViejas} />
     </main> 

@@ -1,3 +1,47 @@
+@import "tailwindcss";
+
+.particles-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.circle-container {
+  position: absolute;
+  animation: move-frames var(--dur) linear infinite var(--delay);
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  background-image: radial-gradient(
+    #ffe39d,
+    #ffe39d 10%,
+    hsla(180, 100%, 80%, 0) 56%
+  );
+  animation: fade-frames 100ms infinite, scale-frames 2s infinite;
+}
+
+@keyframes fade-frames {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+@keyframes scale-frames {
+  0% { transform: scale3d(0.4, 0.4, 1); }
+  50% { transform: scale3d(2.2, 2.2, 1); }
+  100% { transform: scale3d(0.4, 0.4, 1); }
+}
+
+@keyframes move-frames {
+  from { transform: translate3d(var(--from-x,0), var(--from-y,0),0); }
+  to   { transform: translate3d(var(--to-x,0), var(--to-y,-50vh),0); }
+}
+
 @font-face {
   font-family: 'Ancient';
   src: url('/fonts/ancient/Ancient-Medium.ttf') format('truetype');

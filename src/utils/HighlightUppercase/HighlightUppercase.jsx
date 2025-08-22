@@ -2,7 +2,7 @@
 export const HighlightUppercase = ({
   tag = "span",
   text,
-  uppercaseClass = "text-red-900 text-5xl",
+  uppercaseClass = "text-red-900 text-5xl text-shadow-lg/30",
   normalClass = "text-neutral-50 text-shadow-lg/30 [-webkit-text-stroke:1px_#00000060]"
 }) => {
   const TagName = tag;

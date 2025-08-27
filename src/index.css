@@ -101,7 +101,7 @@ body {
   font-size: clamp(2rem, 6vw, 7rem);
 }
 
-p {
+.pFont {
   font-family: 'Seagram', sans-serif;
   font-size: clamp(1rem, 3vw, 2.5rem);
 }

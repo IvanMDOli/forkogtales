@@ -46,8 +46,7 @@ export const Nosotros = () => {
   const info = [
         { h2: "¿De qué se trata este proyecto “Forkog Tales”?", p: "Es una forma de jugar Dungeons and Dragons como nunca antes. Se trata de un mundo compartido por TODOS los jugadores de la comunidad, en el que cada uno dejará huella y modificará el entorno a su paso." },
         { h2: "¿Necesito saber jugar Dungeons and Dragons previamente para comenzar?", p: "¡No es necesario! Nosotros te vamos a guiar desde el minuto uno para que puedas jugar sin problemas. ¡Lo único necesario son tus ganas de jugar!" },
-        { h2: "¿Hay una historia principal? ¿O todas son historias individuales?", p: "Ambas, si bien existe una trama “principal” de la cual podés formar parte, los jugadores pueden ignorarla y seguir su propio camino. Sin embargo, en la historia principal se realizarán cambios en el mundo progresivamente, visibles para todos los jugadores. ¿Vas a tomar un bando?" },
-        { h2: "pija", p: "poronga" }
+        { h2: "¿Hay una historia principal? ¿O todas son historias individuales?", p: "Ambas, si bien existe una trama “principal” de la cual podés formar parte, los jugadores pueden ignorarla y seguir su propio camino. Sin embargo, en la historia principal se realizarán cambios en el mundo progresivamente, visibles para todos los jugadores. ¿Vas a tomar un bando?" }
     ]
 
   return (
@@ -69,10 +68,10 @@ export const Nosotros = () => {
             </div>
         </section>
         <section className='flex flex-col items-center justify-center h-full w-full bg-[url(/backgrounds/fondo-madera-oscura.png)]'>
-            <div className='py-20 px-80 my-10 border-2 border-amber-400 rounded-lg flex flex-col items-center justify-center w-3/4 h-full bg-zinc-900/50'>
+            <div className='py-20 px-80 my-10 border-2 border-amber-400/50 rounded-lg flex flex-col items-center justify-center w-3/4 h-full bg-zinc-900/50'>
                 {info.map((inf, index) => (
-                    <div key={index} className='py-10 my-10'> 
-                        <h2 className='mb-20'>{inf.h2}</h2>
+                    <div key={index} className='py-10 my-5'> 
+                        <h2 className='mb-10 pb-4 border-b-2 border-amber-400'>{inf.h2}</h2>
                         <p>{inf.p}</p>
                     </div>
                 ))}

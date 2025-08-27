@@ -22,7 +22,7 @@ export const GridNoticias = ( { noticias } ) => {
                             className="w-full object-cover"
                         />
                     </div>
-                    <span className="absolute bottom-0 left-0 w-full h-full bg-zinc-900/50 px-2 py-1 transition-all duration-300 ease-in-out group-hover:h-14 group-hover:bg-zinc-950 overflow-hidden">
+                    <span className="absolute bottom-0 left-0 w-full h-full bg-zinc-900/50 px-2 py-1 transition-all duration-500 ease-in-out group-hover:h-14 group-hover:bg-zinc-950 overflow-hidden">
                         <h2 className="p-2 text-lg font-bold">{n.titulo}</h2>
                     </span>
                 </Link>
